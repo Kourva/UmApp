@@ -14,7 +14,7 @@ class UmApp(App):
         # image widget
         self.window.add_widget(
             Image(
-                source="um.png"
+                source="um_adaptive_fore.png"
             )
         )
 
