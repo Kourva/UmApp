@@ -1,11 +1,19 @@
+# The Um App
+# by Kourva
+
+# Imports
 from kivy.app import App
 from kivy.uix.gridlayout import GridLayout
 from kivy.uix.label import Label
 from kivy.uix.image import Image
 
+# Main class
 class UmApp(App):
+    
+    # Build method
     def build(self):
-        #returns a window object with all it's widgets
+        
+        # Grid layout
         self.window = GridLayout()
         self.window.cols = 1
         self.window.size_hint = (0.6, 0.7)
@@ -26,7 +34,8 @@ class UmApp(App):
                         )
         self.window.add_widget(self.text)
 
+        # Returns window
         return self.window
 
-# run Say Hello App Calss
+# Run
 UmApp().run()
